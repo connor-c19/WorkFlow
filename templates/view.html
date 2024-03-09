@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Calendar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <div class="col-5">
+            <button class="btn rounded-pill btn-secondary" id="prev"><</button>
+            <button class="btn rounded-pill btn-primary" id="current-date">Date</button>
+            <button class="btn rounded-pill btn-secondary" id="next">></button>
+        </div>
+
+        <div class="col-5">
+            <h1 class="text-primary text-start">WorkFlow</h1>
+        </div>
+        
+        <div>
+          <button class="btn rounded-pill btn-primary" id="daily">D</button>
+          <button class="btn rounded-pill btn-primary" id="weekly">W</button>
+          <button class="btn rounded-pill btn-primary" id="monthly">M</button>
+        </div>
+      </div>
+
+      <div class="hours-view" id="daily-view">
+        <!-- Daily view content will be added here -->
+      </div>
+
+      <div class="hours-view" id="weekly-view">
+        <!-- Weekly view content will be added here -->
+        <div class="row">
+          <div class="col-2 mt-5" id="weekly-hours"></div>
+          <div class="col-10">
+            <div class="weekly-buttons">
+              <button class="btn rounded-pill btn-primary weekly-button">S</button>
+              <button class="btn rounded-pill btn-primary weekly-button">M</button>
+              <button class="btn rounded-pill btn-primary weekly-button">T</button>
+              <button class="btn rounded-pill btn-primary weekly-button">W</button>
+              <button class="btn rounded-pill btn-primary weekly-button">Th</button>
+              <button class="btn rounded-pill btn-primary weekly-button">F</button>
+              <button class="btn rounded-pill btn-primary weekly-button">Sa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="monthly-view" id="monthly-view">
+        <!-- Monthly view content will be added here -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="static/calendar.js"></script>
+</body>
+</html>
