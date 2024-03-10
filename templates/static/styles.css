@@ -1,0 +1,50 @@
+.calendar-container {
+  margin-top: 20px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hours-view {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.hour-daily {
+  margin-bottom: 10px;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the hour div */
+}
+.hour-weekly {
+  margin-bottom: 10px;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the hour div */
+}
+.hour-daily::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  right: 0; /* Position the line to the right */
+  width: 95%; /* Span the entire width of the hour div */
+  height: 1px; /* Height of the line */
+  background-color: #ccc; /* Color of the line */
+}
+.weekly-buttons {
+  display: flex;
+  flex-direction: row; /* Change to row layout */
+  justify-content: space-between; /* Evenly space out the buttons */
+  align-items: flex-start; /* Align buttons at the top */
+}
+.weekly-button {
+  position: relative; /* Position relative for pseudo-element */
+}
+/* Add vertical line using ::after pseudo-element */
+.weekly-button::after {
+  content: '';
+  position: absolute;
+  top: 70%; /* Position at the top of the button */
+  left: -160%; /* Position in the middle horizontally */
+  transform: translateX(-50%); /* Center the line horizontally */
+  width: 1px;
+  height: 116vh; /* Set height to cover the entire viewport */
+  background-color: black;
+}
