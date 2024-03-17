@@ -1,0 +1,51 @@
+.calendar-container {
+  margin-top: 20px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.hours-view {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.hour-daily {
+  margin-bottom: 10px;
+  position: relative;
+}
+.hour-weekly {
+  margin-bottom: 10px;
+  position: relative;
+}
+.hour-daily::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  right: 5;
+  width: 95%;
+  height: 1px;
+  background-color: #ccc;
+}
+.weekly-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.weekly-button {
+  position: relative;
+}
+.weekly-button::after {
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: -160%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 116vh;
+  background-color: black;
+}
+
+
