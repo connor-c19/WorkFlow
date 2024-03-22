@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daily Calendar</title>
+  <link rel="styleSheet" href="styles.css" type="text/css">
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  
 </head>
 <body>
   <div class="container">
     <div class="calendar-container">
       <div class="calendar-header">
-        <div class="col-5">
+        <div class="col-3">
             <button class="btn rounded-pill btn-secondary" id="prev"></button>
             <button class="btn rounded-pill btn-primary" id="current-date">Date</button>
             <button class="btn rounded-pill btn-secondary" id="next"></button>
@@ -22,7 +23,7 @@
             <h1 class="text-primary text-start">WorkFlow</h1>
         </div>
         
-        <div>
+        <div class="view-container">
           <button class="btn rounded-pill btn-primary" id="daily">D</button>
           <button class="btn rounded-pill btn-primary" id="weekly">W</button>
           <button class="btn rounded-pill btn-primary" id="monthly">M</button>
