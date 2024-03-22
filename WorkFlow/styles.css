@@ -48,4 +48,48 @@
   background-color: black;
 }
 
+.btn#prev{
+background-color:white;
+}
+.btn#next{
+  background-color:white;
+  }
 
+.btn#daily{
+    background-color:white;
+    color:rgb(159, 159, 159);
+  }
+  
+.btn#weekly{
+    background-color:white;
+    color:rgb(159, 159, 159);
+  }
+.btn#monthly{
+    background-color:white;
+    color:rgb(159, 159, 159);
+  }
+.view-container {
+  margin: auto;
+  display: inline;
+  border: 5px solid rgb(159, 159, 159);
+  background-color: rgb(159, 159, 159);
+  color: black;
+  border-radius: 40px;
+  width: 155px;
+  height: 60px;
+  box-shadow: 5px 5px 5px gray;
+  padding: 5px;
+}
+.col-3 {
+  
+  margin: auto;
+  display: inline;
+  border: 5px solid rgb(159, 159, 159);
+  background-color: rgb(159, 159, 159);
+  color: black;
+  border-radius: 40px;
+  width: 70px;
+  height: 60px;
+  box-shadow: 5px 5px 5px gray;
+  padding: 5px;
+}
